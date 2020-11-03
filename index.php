@@ -35,7 +35,7 @@
 
   use App\ArabicRoman;
 
-  $number = rand(1,3000);
+  $number = rand(1,1000);
 
   $converterAR = new ArabicRoman($number, $romanArabic);
   echo $number . '<br />';

@@ -10,25 +10,36 @@
 
 class ArabicRoman
 {
-  public $number;
-  public $romanArabic;
+  private $number;
+  private $romanArabic;
   public $romanNumber = '';
 
+  /**
+   * @param properties
+   * Description: Sets basic properties
+   */
   public function __construct($number, $romanArabic)
   {
     $this->number = $number;
     $this->romanArabic = $romanArabic;
   }
 
+  /**
+   * @param $this->romanNumber
+   * @return
+   * Description: convert arabic to roman numbers
+   */
   public function converter(){
-
     while($this->number > 0){
       $this->checkConverter();
     }
-
   }
 
-  public function checkConverter(){
+  /**
+   * @param
+   * Description: CheckConverter function
+   */
+  private function checkConverter(){
     foreach($this->romanArabic as $roman => $arabic){
       while($this->number >= $arabic){
         $this->romanNumber = $this->romanNumber . $roman;
