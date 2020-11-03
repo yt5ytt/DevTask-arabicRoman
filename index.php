@@ -17,7 +17,11 @@
   */
   include(ABSPATH . 'vendor' . DS . 'autoload.php');
 
-  $arabicRoman = array(
+  $romanArabic = array(
+    'M' => 1000,
+    'CM' => 900,
+    'D' => 500,
+    'CD' => 400,
     'C' => 100,
     'XC' => 90,
     'L' => 50,
@@ -28,3 +32,12 @@
     'IV' => 4,
     'I' => 1
   );
+
+  use App\ArabicRoman;
+
+  $number = rand(1,3000);
+
+  $converterAR = new ArabicRoman($number, $romanArabic);
+  echo $number . '<br />';
+  $converterAR->converter();
+  echo $converterAR->romanNumber;
