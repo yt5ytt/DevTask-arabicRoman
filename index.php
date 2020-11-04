@@ -17,6 +17,11 @@
   */
   include(ABSPATH . 'vendor' . DS . 'autoload.php');
 
+  /**
+   * Include header
+   */
+  include(ABSPATH . 'header.php');
+
   $romanArabic = array(
     'M' => 1000,
     'CM' => 900,
@@ -35,9 +40,27 @@
 
   use App\ArabicRoman;
 
-  $number = rand(1,1000);
-
+  $number = rand(1,100);
   $converterAR = new ArabicRoman($number, $romanArabic);
-  echo $number . '<br />';
-  $converterAR->converter();
-  echo $converterAR->romanNumber;
+
+  ?>
+    <div id="container">
+  <?php
+      if(@$_GET['page'] == ''){
+        include(ABSPATH . 'startPage.php');
+      }elseif($_GET['page'] == 'roman'){
+        include(ABSPATH . 'roman.php');
+      }elseif($_GET['page'] == 'arabic'){
+        include(ABSPATH . 'arabic.php');
+      }
+  ?>
+    </div>
+  <?php
+  // echo $number . '<br />';
+  // $converterAR->converter();
+  // echo $converterAR->romanNumber;
+
+  /**
+   * Include footer
+   */
+  include(ABSPATH . 'footer.php');
