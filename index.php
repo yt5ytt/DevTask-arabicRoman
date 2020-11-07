@@ -22,6 +22,9 @@
    */
   include(ABSPATH . 'header.php');
 
+  /**
+   * Main array with Roman values
+   */
   $romanArabic = array(
     'M' => 1000,
     'CM' => 900,

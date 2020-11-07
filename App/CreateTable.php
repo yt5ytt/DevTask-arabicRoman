@@ -3,7 +3,7 @@
 /**
  * @package Arabic Roman converter
  * @author Aleksandar Safranec <alexwebsoft.net@gmail.com>
- * Description: This is simple Arabic to Roman numbers converter
+ * Description: Creates DB table for result inputs
  */
 
  namespace App;

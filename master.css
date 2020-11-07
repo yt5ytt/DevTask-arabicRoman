@@ -74,3 +74,19 @@ button{
   text-align: center;
   margin-top: 1rem;
 }
+
+.arabicPage{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+  'title'
+  'arabicNumber'
+  'input'
+  'button';
+}
+
+.arabicNumber{
+  font-size: 15rem;
+  text-align:center;
+}
