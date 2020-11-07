@@ -44,7 +44,28 @@
   <div class="title">
     <h2>rezultat</h2>
   </div>
+
 <?php
+  $results = new App\GetResult();
+  $niz = $results->getResult();
+
+  $i=1;
+  $pogodak = 0;
+
+  foreach($niz as $object)
+  {
+    echo $i . '. ' . $object->table_key . ' || ' . $object->table_value . '<br />';
+
+    if($object->table_key == $object->table_value)
+    {
+      $pogodak += 1;
+      $procenat = $pogodak/20 * 100;
+    }
+
+    $i++;
+  }
+
+  echo '<br />Procenat uspešnosti je ' . $procenat . '%';
   }
 ?>
 

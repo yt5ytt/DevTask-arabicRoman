@@ -8,15 +8,14 @@
 
  namespace App;
 
-class ArrayMaker extends Dbh
+class GetResult extends Dbh
 {
-  public $niz;
 
-  public function makeArray()
+  public function getResult()
   {
-    $chain = unserialize($niz);
-    $chain["$key"] = "$value";
-
-    return $chain;
+    $sql = "SELECT * FROM result";
+    $result = $this->dbh()->prepare($sql);
+    $result->execute();
+    return $result->FetchAll();
   }
 }
