@@ -39,9 +39,13 @@
   );
 
   use App\ArabicRoman;
+  use App\ArrayMaker;
 
   $number = rand(1,100);
   $converterAR = new ArabicRoman($number, $romanArabic);
+  $converterAR->converter();
+
+  $array = new ArrayMaker();
 
   ?>
     <div id="container">
@@ -56,9 +60,6 @@
   ?>
     </div>
   <?php
-  // echo $number . '<br />';
-  // $converterAR->converter();
-  // echo $converterAR->romanNumber;
 
   /**
    * Include footer

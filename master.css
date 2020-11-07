@@ -42,3 +42,35 @@ button{
 .arabic{
   grid-area: arabic;
 }
+
+.romanPage{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+  'title'
+  'romanNumber'
+  'input'
+  'button';
+}
+
+.romanNumber{
+  font-size: 15rem;
+  font-family: Arial, serif;
+  text-align:center;
+}
+
+.input, input{
+  text-align: center;
+}
+
+.input input{
+  line-height: 3rem;
+  width: 50%;
+  font-size: 2rem;
+}
+
+.button{
+  text-align: center;
+  margin-top: 1rem;
+}
