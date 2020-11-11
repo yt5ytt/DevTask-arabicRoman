@@ -34,7 +34,7 @@
     <input type="hidden" name="i" value="<?php echo $i; ?>">
     <input type="hidden" name="array" value="<?php $chain; ?>">
     <input type="hidden" name="number" value="<?php echo $number; ?>">
-    <div class="button"><input type="submit" name="submit" value="POŠALJI" /></div>
+    <div class="button"><input type="submit" name="submit" value="SUBMIT" /></div>
   </form>
 <?php
   }

@@ -33,7 +33,7 @@
     <div class="input"><input type="text" name="romanValue" autofocus required/></div>
     <input type="hidden" name="i" value="<?php echo $i; ?>">
     <input type="hidden" name="romanNumber" value="<?php echo $converterAR->romanNumber; ?>">
-    <div class="button"><input type="submit" name="submit" value="POŠALJI" /></div>
+    <div class="button"><input type="submit" name="submit" value="SUBMIT" /></div>
   </form><!-- end of form -->
 <?php
   }
