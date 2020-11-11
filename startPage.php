@@ -1,11 +1,11 @@
 <div class="startPage">
   <div class="title">
-    <h1>Biraj vežbu</h1>
+    <h1>Choose your exercise</h1>
   </div>
   <div class="roman">
-    <button onclick="roman()">Pogađaj rimske brojeve</button>
+    <button onclick="roman()">Guess the Roman numerals</button>
   </div>
   <div class="arabic">
-    <button onclick="arabic()">Pogađaj arapske brojeve</button>
+    <button onclick="arabic()">Guess the Arabic numerals</button>
   </div>
 </div>

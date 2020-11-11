@@ -22,7 +22,7 @@
   {
 ?>
   <div class="title">
-    <h2>napiši rimski broj</h2>
+    <h2>write roman number</h2>
   </div><!-- end of .title -->
 
   <div class="arabicNumber">
@@ -41,7 +41,7 @@
   {
 ?>
   <div class="title">
-    <h2>rezultat</h2>
+    <h2>result</h2>
   </div><!-- end of .title -->
 
 <?php

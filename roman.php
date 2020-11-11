@@ -22,7 +22,7 @@
   {
 ?>
   <div class="title">
-    <h2>koji je ovo rimski broj?</h2>
+    <h2>which is this roman number?</h2>
   </div><!-- end of .title -->
 
   <div class="romanNumber">
@@ -42,7 +42,7 @@
   {
 ?>
   <div class="title">
-    <h2>rezultat</h2>
+    <h2>result</h2>
   </div><!-- end of .title -->
 
 <?php
@@ -77,7 +77,7 @@
     </table><!-- end of table -->
 <?php
     echo '<br />';
-    echo '<br />Procenat uspešnosti je ' . $procenat . '%';
+    echo '<br />Success rate is ' . $procenat . '%';
 ?>
   </div><!-- end of .input -->
 <?php
